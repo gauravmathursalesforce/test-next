@@ -7,7 +7,7 @@ export default function Header() {
             <div className={styles.container}>
                 <nav>
                     <a className={styles.link} href="#">Home Feature branch text</a>
-                    <a className={styles.link} href="#">About</a>
+                    <a className={styles.link} href="#">About Menu change</a>
                     <a className={styles.link} href="#">Products</a>
                     <a className={styles.link} href="#">Services</a>
                     <a className={styles.link} href="#">Contact Us</a>
