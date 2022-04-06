@@ -18,11 +18,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-    const allPosts = await getAllPostsPaginated();
-    const paths = Object.keys(allPosts).map(
-        (pageIndex) => `/posts/page/${parseInt(pageIndex, 10) + 1}`
-    );
-
+    let paths =[];
     return {
         paths,
         fallback: true,
@@ -32,7 +28,7 @@ export async function getStaticPaths() {
 export default function Posts({ posts, prevPage, nextPage }) {
     return (
         <div>
-            {posts.map((post, i) => {
+            {posts && posts.map((post, i) => {
                 return (
                     <div key={i}>
                         <Image

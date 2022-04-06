@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from "next/link";
 import Image from "next/image";
 import {
     getPostData
@@ -11,7 +10,7 @@ export async function getStaticProps({ params }) {
     const { posts } = await getPostData(params.slug);
 
 
-    console.log(posts)
+    // console.log(posts)
     return {
         props: { ...posts },
         revalidate: 1,
