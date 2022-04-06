@@ -6,7 +6,7 @@ export default function Header() {
         <div className={styles['fixed-header']}>
             <div className={styles.container}>
                 <nav>
-                    <a className={styles.link} href="#">Home</a>
+                    <a className={styles.link} href="#">Home Feature branch</a>
                     <a className={styles.link} href="#">About</a>
                     <a className={styles.link} href="#">Products</a>
                     <a className={styles.link} href="#">Services</a>
